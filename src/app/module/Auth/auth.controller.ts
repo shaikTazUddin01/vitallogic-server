@@ -39,6 +39,7 @@ const getSingleUser = catchAsync(async (req, res) => {
 // login user
 const loginUser = catchAsync(async (req, res) => {
   const result = await authService.loginUser(req.body);
+  
   res.cookie("token", result);
   sendResponse(res, {
     success: true,

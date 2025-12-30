@@ -7,7 +7,7 @@ import cookieParser from "cookie-parser";
 
 const app = express();
 //middleware
-app.use(cors({origin:["https://mfs-client-alpha.vercel.app","http://localhost:5173"],credentials:true}));
+app.use(cors({origin:["https://mfs-client-alpha.vercel.app","http://localhost:3000","http://localhost:4000"],credentials:true}));
 app.use(express.json()); 
 app.use(cookieParser())
 
